@@ -100,6 +100,7 @@ const Header = () => {
         onClose={() => setIsMenuOpen(false)}
         className="bg-transparent w-full bg-accent pl-[25px] navbar-hr-line"
       >
+
         <div className="flex flex-col items-center justify-center gap-3">
           <NavbarMenuItem className="Navbar-menu-item">
             <Link
@@ -137,6 +138,7 @@ const Header = () => {
               Solutions
             </Link>
           </NavbarMenuItem>
+
           <div className="flex gap-4 mt-1">
             <NavbarMenuItem>
               <Button
@@ -164,7 +166,9 @@ const Header = () => {
               </Button>
             </NavbarMenuItem>
           </div>
+
         </div>
+        
       </NavbarMenu>
     </Navbar>
   );
