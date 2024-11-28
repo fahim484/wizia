@@ -1,0 +1,13 @@
+.navbar-hr-line {
+  border-bottom: 1px solid #183a40; /* Adjust color and width as needed */
+}
+
+.Navbar-menu-item {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.Navbar-menu-item:hover {
+  background-color: #96ACAF;
+}
