@@ -4,14 +4,16 @@ import Header from "./components/shared/Header";
 import {
   Hero
 } from "./components/home";
+import Partners from "./components/home/Partners";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <main>
+      <main className="bg-secondary">
         {/* <Routes> */}
           <Header />
           <Hero />
+          <Partners />
           {/* <div className="w-full max-w-[1440px] px-2.5 md:px-10 lg:px-20 xl:px-24 mx-auto"> */}
             {/* <div className="space-y-[128px] "> */}
               {/* <Route path="" element={<Navbar />}> */}
