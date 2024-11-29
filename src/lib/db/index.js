@@ -18,3 +18,19 @@ export const offersList = [
       "Train an aiDR on an outbound patch, to nurture inbound leads, or to reach out to your long tail of SMB customers at renewal time.",
   },
 ];
+
+
+export const FeaturesList = [
+  {
+    title: "Quick to ramp",
+  },
+  {
+    title: "Easy to optimize",
+  },
+  {
+    title: "Quick to scale up",
+  },
+  {
+    title: "Works with all your existing tools",
+  },
+];
