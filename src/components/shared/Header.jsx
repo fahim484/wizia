@@ -25,7 +25,7 @@ const Header = () => {
     >
       <NavbarBrand>
         <div className="w-16">
-          <img src="/public/Img/Logo.png" alt="" />
+          <img src="/Img/Logo.png" alt="" />
         </div>
       </NavbarBrand>
 
@@ -100,7 +100,6 @@ const Header = () => {
         onClose={() => setIsMenuOpen(false)}
         className="bg-transparent w-full bg-accent pl-[25px] navbar-hr-line"
       >
-
         <div className="flex flex-col items-center justify-center gap-3">
           <NavbarMenuItem className="Navbar-menu-item">
             <Link
@@ -111,7 +110,7 @@ const Header = () => {
               About Us
             </Link>
           </NavbarMenuItem>
-          <NavbarMenuItem  className="Navbar-menu-item">
+          <NavbarMenuItem className="Navbar-menu-item">
             <Link
               color="foreground"
               href="#"
@@ -120,7 +119,7 @@ const Header = () => {
               Pricing
             </Link>
           </NavbarMenuItem>
-          <NavbarMenuItem  className="Navbar-menu-item">
+          <NavbarMenuItem className="Navbar-menu-item">
             <Link
               color="foreground"
               href="#"
@@ -129,7 +128,7 @@ const Header = () => {
               Customers
             </Link>
           </NavbarMenuItem>
-          <NavbarMenuItem  className="Navbar-menu-item">
+          <NavbarMenuItem className="Navbar-menu-item">
             <Link
               color="foreground"
               href="#"
@@ -166,9 +165,7 @@ const Header = () => {
               </Button>
             </NavbarMenuItem>
           </div>
-
         </div>
-        
       </NavbarMenu>
     </Navbar>
   );

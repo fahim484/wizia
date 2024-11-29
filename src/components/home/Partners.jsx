@@ -1,10 +1,10 @@
 import React from "react";
 
-import brand1 from "/public/Img/brand-logos/BackHub-logo.png";
-import brand2 from "/public/Img/brand-logos/CableLabs-logo.png";
-import brand3 from "/public/Img/brand-logos/DBS-logo.png";
-import brand4 from "/public/Img/brand-logos/EasyEuro-logo.png";
-import brand5 from "/public/Img/brand-logos/AMD-logo.png";
+import brand1 from "/Img/brand-logos/BackHub-logo.png";
+import brand2 from "/Img/brand-logos/CableLabs-logo.png";
+import brand3 from "/Img/brand-logos/DBS-logo.png";
+import brand4 from "/Img/brand-logos/EasyEuro-logo.png";
+import brand5 from "/Img/brand-logos/AMD-logo.png";
 // import quote from "../assets/quote.svg";
 
 const brands = [
@@ -28,6 +28,7 @@ const Partners = () => {
               key={index}
               src={brand.image}
               alt={brand.alt}
+              className="w-full h-auto"
             />
           ))}
         </div>

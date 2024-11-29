@@ -5,6 +5,7 @@ import {
   Hero
 } from "./components/home";
 import Partners from "./components/home/Partners";
+import Offers from "./components/home/Offers";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
           <Header />
           <Hero />
           <Partners />
+          <Offers />
           {/* <div className="w-full max-w-[1440px] px-2.5 md:px-10 lg:px-20 xl:px-24 mx-auto"> */}
             {/* <div className="space-y-[128px] "> */}
               {/* <Route path="" element={<Navbar />}> */}
