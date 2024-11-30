@@ -21,7 +21,7 @@ export const Hero = () => {
             patch. It will send personalized sequences to every target contact.
           </p>
           <Button className="flex items-center justify-center gap-2">
-            Sign Up for the Beta <BsArrowUpRightSquare />
+            Sign Up for the Beta <BsArrowUpRightSquare className="bg-[#0CC1C5]" />
           </Button>
         </div>
       </div>
