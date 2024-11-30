@@ -59,3 +59,19 @@ export const sliderList = [
       occupation: "Chief Strategy Officer @ Company",
     },
 ];
+
+
+export const aboutList = [
+  {
+    title: "32%",
+    description: "Improvement in Open Rates",
+  },
+  {
+    title: "75%",
+    description: "Improvement in Ramp Time",
+  },
+  {
+    title: "35%",
+    description: "Improvement in Meetings Booked",
+  },
+];

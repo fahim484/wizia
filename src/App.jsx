@@ -6,6 +6,7 @@ import Partners from "./components/home/Partners";
 import Offers from "./components/home/Offers";
 import Features from "./components/home/Features";
 import Slider from "./components/home/Slider";
+import About from "./components/home/About";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Offers />
         <Features />
         <Slider />
+        <About />
         {/* <div className="w-full max-w-[1440px] px-2.5 md:px-10 lg:px-20 xl:px-24 mx-auto"> */}
         {/* <div className="space-y-[128px] "> */}
         {/* <Route path="" element={<Navbar />}> */}

@@ -21,7 +21,7 @@ const Sliders = () => {
         on: "bg-primary",
       },
       base: "h-3 w-3 rounded-full",
-      wrapper: "absolute bottom-5 left-1/2 flex -translate-x-1/2 space-x-6 -bottom-1 md:-bottom-8",
+      wrapper: "absolute bottom-5 left-1/2 flex -translate-x-1/2 space-x-6 -bottom-2.5 md:-bottom-8",
     },
     item: {
       base: "absolute left-1/2 top-1/2 block w-full -translate-x-1/2 -translate-y-1/2",
@@ -47,7 +47,7 @@ const Sliders = () => {
           <Carousel pauseOnHover theme={customTheme}>
             {sliderList.map((card, i) => (
               <div key={i} className="flex h-full items-center justify-center">
-                <div className="flex flex-col items-center justify-center w-full space-y-[22px] md:space-y-[44px] font-body text-center max-w-screen-lg">
+                <div className="flex flex-col items-center justify-center w-full space-y-[22px] md:space-y-[34px] font-body text-center max-w-screen-lg">
                   <div className="bg-[#183A40] flex size-14 md:size-[74px] items-center justify-center p-2 rounded-full">
                     <img alt="icon" className=" w-1/3 md:w-1/2" src={card.image} />
                   </div>
