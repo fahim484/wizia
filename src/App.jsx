@@ -9,34 +9,33 @@ import Slider from "./components/home/Slider";
 import About from "./components/home/About";
 import ContactUs from "./components/home/ContactUs";
 import Footer from "./components/shared/Footer";
+import Error from "./components/error/Error";
 
 const App = () => {
   return (
     <BrowserRouter>
       <main className="bg-accent">
-        {/* <Routes> */}
         <Header />
-        <Hero />
-        <Partners />
-        <Offers />
-        <Features />
-        <Slider />
-        <About />
-        <ContactUs />
-        <Footer />
-        {/* <div className="w-full max-w-[1440px] px-2.5 md:px-10 lg:px-20 xl:px-24 mx-auto"> */}
-        {/* <div className="space-y-[128px] "> */}
-        {/* <Route path="" element={<Navbar />}> */}
-        {/* <Route path="/" element={<Dashboard />} />
-                <Route path="/Incidents" element={<Incidents />} />
-                <Route path="/Locations" element={<Locations />} />
-                <Route path="/new-incident" element={<IncidentsFirstPage />} />
-                <Route path="*" element={<Error />} /> */}
-        {/* </Route> */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* <Footer /> */}
-        {/* </Routes> */}
+        <Routes>
+          {/* Route for the single-page layout */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <Partners />
+                <Offers />
+                <Features />
+                <Slider />
+                <About />
+                <ContactUs />
+                <Footer />
+              </>
+            }
+          />
+          {/* Fallback route for errors */}
+          <Route path="*" element={<Error />} />
+        </Routes>
       </main>
     </BrowserRouter>
   );
