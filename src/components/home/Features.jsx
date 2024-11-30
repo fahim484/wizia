@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
-import { FeaturesList } from "../../lib/db";
+import { featuresList } from "../../lib/db";
 
 const Features = () => {
   return (
@@ -20,7 +20,7 @@ const Features = () => {
     
             <div>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-6">
-                {FeaturesList.map((feature, index) => (
+                {featuresList.map((feature, index) => (
                   <li
                     key={index}
                     className="flex items-center gap-2.5 text-[#14BCB2] text-base md:text-xl leading-[20.8px] md:leading-[26px] font-heading font-medium tracking-wide w-fit"

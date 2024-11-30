@@ -20,7 +20,7 @@ export const offersList = [
 ];
 
 
-export const FeaturesList = [
+export const featuresList = [
   {
     title: "Quick to ramp",
   },
@@ -33,4 +33,29 @@ export const FeaturesList = [
   {
     title: "Works with all your existing tools",
   },
+];
+
+
+export const sliderList = [
+    {
+      id: 1,
+      image: "/Img/slider-logo.png",
+      title: "Qorem dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+      name: "John Doe",
+      occupation: "Chief Strategy Officer @ Company",
+    },
+    {
+      id: 2,
+      image: "/Img/slider-logo.png",
+      title: "New ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+      name: "John Doe",
+      occupation: "Chief Strategy Officer @ Company",
+    },
+    {
+      id: 3,
+      image: "/Img/slider-logo.png",
+      title: "Old ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+      name: "John Doe",
+      occupation: "Chief Strategy Officer @ Company",
+    },
 ];
