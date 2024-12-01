@@ -1,21 +1,24 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "./components/shared/Header";
-import Footer from "./components/shared/Footer";
-import Hero from "./components/home/Hero";
-import Partners from "./components/home/Partners";
-import Offers from "./components/home/Offers";
-import Features from "./components/home/Features";
-import Slider from "./components/home/Slider";
-import About from "./components/home/About";
-import ContactUs from "./components/home/ContactUs";
+import {
+  Hero,
+  Partners,
+  Offers,
+  Features,
+  Slider,
+  About,
+  ContactUs,
+} from "./components/home";
+import { Header, Footer } from "./components/shared";
+import {
+  AboutUs,
+  Pricing,
+  Customers,
+  Solutions,
+  BookADemo,
+  ContactUsAll,
+} from "./components/routes";
 import Error from "./components/error/Error";
-import Pricing from "./components/routes/Pricing";
-import Customers from "./components/routes/Customers";
-import AboutUs from "./components/routes/AboutUs";
-import Solutions from "./components/routes/Solutions";
-import BookADemo from "./components/routes/BookADemo";
-import ContactUsAll from "./components/routes/ContactUsAll";
 
 const App = () => {
   return (
