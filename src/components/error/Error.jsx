@@ -7,7 +7,7 @@ const Error = () => {
   };
 
   return (
-    <section>
+    <section className="h-screen">
       <div className="text-center">
         <div>
           <img
@@ -16,10 +16,10 @@ const Error = () => {
             className="h-[400px] w-screen mt-16"
           />
         </div>
-        <h1 className="mt-32 px-4 sm:px-0 sm:text-3xl font-bold underline text-red-600">
+        <h1 className="mt-11 px-4 sm:px-0 sm:text-3xl font-bold underline text-red-600">
           This Page Is Not Exist, Please Return To
           <a href="/" className="text-[#F27737]">
-            "Home"
+          &quot;Home&quot;
           </a>
         </h1>
         <button

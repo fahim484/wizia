@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink, Outlet } from "react-router-dom";
 import {
   Button,
   Link,
@@ -11,6 +12,7 @@ import {
   NavbarMenuToggle,
 } from "@nextui-org/react";
 import "./Header.css";
+import { HeaderButton } from "../common/HeaderButton";
 
 const Header = () => {
   // Added useState to manage the menu toggle for smaller devices.
@@ -25,7 +27,9 @@ const Header = () => {
     >
       <NavbarBrand>
         <div className="w-16">
-          <img src="/Img/Logo.png" alt="" />
+          <NavLink to="/">
+            <img src="/Img/Logo.png" alt="Brand Logo" />
+          </NavLink>
         </div>
       </NavbarBrand>
 
@@ -42,55 +46,41 @@ const Header = () => {
       {/* Standard Navbar Content for Larger Screens */}
       <NavbarContent className="hidden md:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <NavLink to="/about-us" className="text-white">
             About Us
-          </Link>
+          </NavLink>
         </NavbarItem>
-
         <NavbarItem>
-          <Link color="foreground" href="#" aria-current="page">
+          <NavLink to="/pricing" className="text-white">
             Pricing
-          </Link>
+          </NavLink>
         </NavbarItem>
-
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <NavLink to="/customers" className="text-white">
             Customers
-          </Link>
+          </NavLink>
         </NavbarItem>
-
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <NavLink to="/solutions" className="text-white">
             Solutions
-          </Link>
+          </NavLink>
         </NavbarItem>
       </NavbarContent>
 
       <NavbarContent justify="end" className="hidden md:flex">
         <NavbarItem>
-          <Button
-            as={Link}
-            color="white"
-            href="#"
-            variant="bordered"
-            radius="full"
-            className="text-[#FFFFFF] shadow-nav-btn hover:bg-[#0FF1F6] hover:text-[#002228] hover:border-none font-medium hover:transition-none"
-          >
-            Book a Demo
-          </Button>
+          <NavLink to="/book-a-demo">
+            <HeaderButton>Book a Demo</HeaderButton>
+          </NavLink>
         </NavbarItem>
 
         <NavbarItem>
-          <Button
-            as={Link}
-            color="white"
-            href="#"
-            variant="bordered"
-            radius="full"
-            className="text-[#FFFFFF] shadow-nav-btn hover:bg-[#0FF1F6] hover:text-[#002228] hover:border-none font-medium hover:transition-none"
+          <NavLink
+            to="/contact-us"
           >
+            <HeaderButton>Contact Us</HeaderButton>
             Contact Us
-          </Button>
+          </NavLink>
         </NavbarItem>
       </NavbarContent>
 
@@ -100,73 +90,68 @@ const Header = () => {
         onClose={() => setIsMenuOpen(false)}
         className="bg-transparent w-full bg-accent pl-[25px] navbar-hr-line"
       >
+
+        {/* Menu Items */}
         <div className="flex flex-col items-center justify-center gap-3">
-          <NavbarMenuItem className="Navbar-menu-item">
-            <Link
-              color="foreground"
-              href="#"
+          <NavbarMenuItem>
+            <NavLink
+              to="/about-us"
               onClick={() => setIsMenuOpen(false)}
+              className="text-white"
             >
               About Us
-            </Link>
+            </NavLink>
           </NavbarMenuItem>
-          <NavbarMenuItem className="Navbar-menu-item">
-            <Link
-              color="foreground"
-              href="#"
+
+          <NavbarMenuItem>
+            <NavLink
+              to="/pricing"
               onClick={() => setIsMenuOpen(false)}
+              className="text-white"
             >
               Pricing
-            </Link>
+            </NavLink>
           </NavbarMenuItem>
-          <NavbarMenuItem className="Navbar-menu-item">
-            <Link
-              color="foreground"
-              href="#"
+
+          <NavbarMenuItem>
+            <NavLink
+              to="/customers"
               onClick={() => setIsMenuOpen(false)}
+              className="text-white"
             >
               Customers
-            </Link>
+            </NavLink>
           </NavbarMenuItem>
-          <NavbarMenuItem className="Navbar-menu-item">
-            <Link
-              color="foreground"
-              href="#"
+
+          <NavbarMenuItem>
+            <NavLink
+              to="/solutions"
               onClick={() => setIsMenuOpen(false)}
+              className="text-white"
             >
               Solutions
-            </Link>
+            </NavLink>
           </NavbarMenuItem>
 
           <div className="flex gap-4 mt-1">
-            <NavbarMenuItem>
-              <Button
-                as={Link}
-                color="white"
-                href="#"
-                variant="bordered"
-                radius="full"
-                className="text-[#FFFFFF] shadow-nav-btn hover:bg-[#0FF1F6] hover:text-[#002228] hover:border-none font-medium hover:transition-none"
-              >
-                Book a Demo
-              </Button>
-            </NavbarMenuItem>
 
-            <NavbarMenuItem>
-              <Button
-                as={Link}
-                color="white"
-                href="#"
-                variant="bordered"
-                radius="full"
-                className="text-[#FFFFFF] shadow-nav-btn hover:bg-[#0FF1F6] hover:text-[#002228] hover:border-none font-medium hover:transition-none"
-              >
-                Contact Us
-              </Button>
-            </NavbarMenuItem>
+            <NavbarItem>
+          <NavLink to="/book-a-demo">
+            <HeaderButton>Book a Demo</HeaderButton>
+          </NavLink>
+        </NavbarItem>
+
+        <NavbarItem>
+          <NavLink to="/book-a-demo">
+            <HeaderButton>Contact Us</HeaderButton>
+          </NavLink>
+        </NavbarItem>
           </div>
         </div>
       </NavbarMenu>
+
+      {/* Render child routes using Outlet */}
+      <Outlet />
     </Navbar>
   );
 };

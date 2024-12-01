@@ -1,8 +1,7 @@
-import React from "react";
 import { Button } from "../common/Button";
 import { BsArrowUpRightSquare } from "react-icons/bs";
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <section className="w-full sm:h-screen bg-[url('/Img/hero-bg-img.png')] bg-no-repeat bg-cover bg-right text-white">
       <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-8 lg:gap-[18px] py-20 sm:py-36 px-6 md:px-20 container max-w-[1400px] mx-auto">
@@ -28,3 +27,5 @@ export const Hero = () => {
     </section>
   );
 };
+
+export default Hero;
